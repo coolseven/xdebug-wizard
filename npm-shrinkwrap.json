@@ -64,6 +64,11 @@
       "from": "align-text@>=0.1.3 <0.2.0",
       "resolved": "https://registry.npmjs.org/align-text/-/align-text-0.1.4.tgz"
     },
+    "alphanum-sort": {
+      "version": "1.0.2",
+      "from": "alphanum-sort@>=1.0.1 <2.0.0",
+      "resolved": "https://registry.npmjs.org/alphanum-sort/-/alphanum-sort-1.0.2.tgz"
+    },
     "amdefine": {
       "version": "1.0.1",
       "from": "amdefine@>=0.0.4",
@@ -221,6 +226,11 @@
       "from": "async-foreach@>=0.1.3 <0.2.0",
       "resolved": "https://registry.npmjs.org/async-foreach/-/async-foreach-0.1.3.tgz"
     },
+    "async-validator": {
+      "version": "1.7.1",
+      "from": "async-validator@>=1.6.9 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/async-validator/download/async-validator-1.7.1.tgz"
+    },
     "asynckit": {
       "version": "0.4.0",
       "from": "asynckit@>=0.4.0 <0.5.0",
@@ -315,6 +325,11 @@
       "version": "6.24.1",
       "from": "babel-helper-replace-supers@>=6.24.1 <7.0.0",
       "resolved": "https://registry.npmjs.org/babel-helper-replace-supers/-/babel-helper-replace-supers-6.24.1.tgz"
+    },
+    "babel-helper-vue-jsx-merge-props": {
+      "version": "2.0.2",
+      "from": "babel-helper-vue-jsx-merge-props@>=2.0.0 <3.0.0",
+      "resolved": "https://registry.npm.taobao.org/babel-helper-vue-jsx-merge-props/download/babel-helper-vue-jsx-merge-props-2.0.2.tgz"
     },
     "babel-helpers": {
       "version": "6.24.1",
@@ -552,6 +567,11 @@
       "version": "0.5.3",
       "from": "batch@0.5.3",
       "resolved": "https://registry.npmjs.org/batch/-/batch-0.5.3.tgz"
+    },
+    "batch-processor": {
+      "version": "1.0.0",
+      "from": "batch-processor@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/batch-processor/download/batch-processor-1.0.0.tgz"
     },
     "bcrypt-pbkdf": {
       "version": "1.0.1",
@@ -821,6 +841,11 @@
         }
       }
     },
+    "caniuse-api": {
+      "version": "1.6.1",
+      "from": "caniuse-api@>=1.5.2 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/caniuse-api/download/caniuse-api-1.6.1.tgz"
+    },
     "caniuse-db": {
       "version": "1.0.30000696",
       "from": "caniuse-db@>=1.0.30000634 <2.0.0",
@@ -965,6 +990,31 @@
       "version": "1.1.0",
       "from": "code-point-at@>=1.0.0 <2.0.0",
       "resolved": "https://registry.npm.taobao.org/code-point-at/download/code-point-at-1.1.0.tgz"
+    },
+    "color": {
+      "version": "0.11.4",
+      "from": "color@>=0.11.0 <0.12.0",
+      "resolved": "https://registry.npm.taobao.org/color/download/color-0.11.4.tgz"
+    },
+    "color-convert": {
+      "version": "1.9.0",
+      "from": "color-convert@>=1.3.0 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/color-convert/download/color-convert-1.9.0.tgz"
+    },
+    "color-name": {
+      "version": "1.1.2",
+      "from": "color-name@>=1.1.1 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/color-name/download/color-name-1.1.2.tgz"
+    },
+    "color-string": {
+      "version": "0.3.0",
+      "from": "color-string@>=0.3.0 <0.4.0",
+      "resolved": "https://registry.npmjs.org/color-string/-/color-string-0.3.0.tgz"
+    },
+    "colormin": {
+      "version": "1.1.2",
+      "from": "colormin@>=1.0.5 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/colormin/download/colormin-1.1.2.tgz"
     },
     "colors": {
       "version": "1.1.2",
@@ -1194,6 +1244,11 @@
         }
       }
     },
+    "css-color-names": {
+      "version": "0.0.4",
+      "from": "css-color-names@0.0.4",
+      "resolved": "https://registry.npmjs.org/css-color-names/-/css-color-names-0.0.4.tgz"
+    },
     "css-loader": {
       "version": "0.14.5",
       "from": "css-loader@>=0.14.5 <0.15.0",
@@ -1215,6 +1270,28 @@
           "resolved": "https://registry.npm.taobao.org/source-map/download/source-map-0.4.4.tgz"
         }
       }
+    },
+    "css-selector-tokenizer": {
+      "version": "0.7.0",
+      "from": "css-selector-tokenizer@>=0.7.0 <0.8.0",
+      "resolved": "https://registry.npm.taobao.org/css-selector-tokenizer/download/css-selector-tokenizer-0.7.0.tgz",
+      "dependencies": {
+        "regexpu-core": {
+          "version": "1.0.0",
+          "from": "regexpu-core@>=1.0.0 <2.0.0",
+          "resolved": "https://registry.npmjs.org/regexpu-core/-/regexpu-core-1.0.0.tgz"
+        }
+      }
+    },
+    "cssesc": {
+      "version": "0.1.0",
+      "from": "cssesc@>=0.1.0 <0.2.0",
+      "resolved": "https://registry.npmjs.org/cssesc/-/cssesc-0.1.0.tgz"
+    },
+    "cssnano": {
+      "version": "3.10.0",
+      "from": "cssnano@>=2.6.1 <4.0.0",
+      "resolved": "https://registry.npm.taobao.org/cssnano/download/cssnano-3.10.0.tgz"
     },
     "csso": {
       "version": "2.3.2",
@@ -1356,6 +1433,16 @@
       "from": "deep-extend@>=0.4.0 <0.5.0",
       "resolved": "https://registry.npm.taobao.org/deep-extend/download/deep-extend-0.4.2.tgz"
     },
+    "deepmerge": {
+      "version": "1.4.4",
+      "from": "deepmerge@>=1.2.0 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/deepmerge/download/deepmerge-1.4.4.tgz"
+    },
+    "defined": {
+      "version": "1.0.0",
+      "from": "defined@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/defined/download/defined-1.0.0.tgz"
+    },
     "del": {
       "version": "3.0.0",
       "from": "del@>=3.0.0 <4.0.0",
@@ -1492,6 +1579,11 @@
       "from": "ecc-jsbn@>=0.1.1 <0.2.0",
       "resolved": "https://registry.npmjs.org/ecc-jsbn/-/ecc-jsbn-0.1.1.tgz"
     },
+    "echarts": {
+      "version": "3.6.2",
+      "from": "echarts@latest",
+      "resolved": "https://registry.npm.taobao.org/echarts/download/echarts-3.6.2.tgz"
+    },
     "editorconfig": {
       "version": "0.13.2",
       "from": "editorconfig@>=0.13.2 <0.14.0",
@@ -1513,6 +1605,16 @@
       "version": "1.3.14",
       "from": "electron-to-chromium@>=1.2.7 <2.0.0",
       "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.14.tgz"
+    },
+    "element-resize-detector": {
+      "version": "1.1.12",
+      "from": "element-resize-detector@latest",
+      "resolved": "https://registry.npm.taobao.org/element-resize-detector/download/element-resize-detector-1.1.12.tgz"
+    },
+    "element-resize-event": {
+      "version": "2.0.9",
+      "from": "element-resize-event@latest",
+      "resolved": "https://registry.npm.taobao.org/element-resize-event/download/element-resize-event-2.0.9.tgz"
     },
     "elliptic": {
       "version": "6.4.0",
@@ -1778,6 +1880,11 @@
       "from": "fast-deep-equal@>=0.1.0 <0.2.0",
       "resolved": "https://registry.npm.taobao.org/fast-deep-equal/download/fast-deep-equal-0.1.0.tgz"
     },
+    "fast-diff": {
+      "version": "1.1.1",
+      "from": "fast-diff@1.1.1",
+      "resolved": "https://registry.npm.taobao.org/fast-diff/download/fast-diff-1.1.1.tgz"
+    },
     "fastparse": {
       "version": "1.1.1",
       "from": "fastparse@>=1.1.1 <2.0.0",
@@ -1943,6 +2050,11 @@
       "version": "1.0.11",
       "from": "fstream@>=1.0.0 <2.0.0",
       "resolved": "https://registry.npm.taobao.org/fstream/download/fstream-1.0.11.tgz"
+    },
+    "function-bind": {
+      "version": "1.1.0",
+      "from": "function-bind@>=1.0.2 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/function-bind/download/function-bind-1.1.0.tgz"
     },
     "gauge": {
       "version": "2.7.4",
@@ -2162,6 +2274,11 @@
       "from": "har-validator@>=2.0.6 <2.1.0",
       "resolved": "https://registry.npmjs.org/har-validator/-/har-validator-2.0.6.tgz"
     },
+    "has": {
+      "version": "1.0.1",
+      "from": "has@>=1.0.1 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/has/download/has-1.0.1.tgz"
+    },
     "has-ansi": {
       "version": "2.0.0",
       "from": "has-ansi@>=2.0.0 <3.0.0",
@@ -2335,6 +2452,11 @@
       "from": "https-browserify@0.0.1",
       "resolved": "https://registry.npm.taobao.org/https-browserify/download/https-browserify-0.0.1.tgz"
     },
+    "icss-replace-symbols": {
+      "version": "1.1.0",
+      "from": "icss-replace-symbols@>=1.1.0 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/icss-replace-symbols/download/icss-replace-symbols-1.1.0.tgz"
+    },
     "ieee754": {
       "version": "1.1.8",
       "from": "ieee754@>=1.1.4 <2.0.0",
@@ -2467,6 +2589,11 @@
       "from": "is-absolute@>=0.1.5 <0.2.0",
       "resolved": "https://registry.npm.taobao.org/is-absolute/download/is-absolute-0.1.7.tgz"
     },
+    "is-absolute-url": {
+      "version": "2.1.0",
+      "from": "is-absolute-url@>=2.0.0 <3.0.0",
+      "resolved": "https://registry.npm.taobao.org/is-absolute-url/download/is-absolute-url-2.1.0.tgz"
+    },
     "is-arrayish": {
       "version": "0.2.1",
       "from": "is-arrayish@>=0.2.1 <0.3.0",
@@ -2586,6 +2713,11 @@
       "version": "1.0.0",
       "from": "is-path-inside@>=1.0.0 <2.0.0",
       "resolved": "https://registry.npm.taobao.org/is-path-inside/download/is-path-inside-1.0.0.tgz"
+    },
+    "is-plain-obj": {
+      "version": "1.1.0",
+      "from": "is-plain-obj@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/is-plain-obj/download/is-plain-obj-1.1.0.tgz"
     },
     "is-plain-object": {
       "version": "2.0.3",
@@ -2972,10 +3104,20 @@
       "from": "lodash.assign@>=4.2.0 <5.0.0",
       "resolved": "https://registry.npm.taobao.org/lodash.assign/download/lodash.assign-4.2.0.tgz"
     },
+    "lodash.camelcase": {
+      "version": "4.3.0",
+      "from": "lodash.camelcase@>=4.3.0 <5.0.0",
+      "resolved": "https://registry.npm.taobao.org/lodash.camelcase/download/lodash.camelcase-4.3.0.tgz"
+    },
     "lodash.clonedeep": {
       "version": "4.5.0",
       "from": "lodash.clonedeep@>=4.3.2 <5.0.0",
       "resolved": "https://registry.npm.taobao.org/lodash.clonedeep/download/lodash.clonedeep-4.5.0.tgz"
+    },
+    "lodash.debounce": {
+      "version": "4.0.8",
+      "from": "lodash.debounce@latest",
+      "resolved": "https://registry.npm.taobao.org/lodash.debounce/download/lodash.debounce-4.0.8.tgz"
     },
     "lodash.defaults": {
       "version": "4.2.0",
@@ -3012,6 +3154,11 @@
       "from": "lodash.keys@>=3.0.0 <4.0.0",
       "resolved": "https://registry.npm.taobao.org/lodash.keys/download/lodash.keys-3.1.2.tgz"
     },
+    "lodash.memoize": {
+      "version": "4.1.2",
+      "from": "lodash.memoize@>=4.1.2 <5.0.0",
+      "resolved": "https://registry.npm.taobao.org/lodash.memoize/download/lodash.memoize-4.1.2.tgz"
+    },
     "lodash.mergewith": {
       "version": "4.6.0",
       "from": "lodash.mergewith@>=4.6.0 <5.0.0",
@@ -3036,6 +3183,11 @@
       "version": "3.1.1",
       "from": "lodash.templatesettings@>=3.0.0 <4.0.0",
       "resolved": "https://registry.npmjs.org/lodash.templatesettings/-/lodash.templatesettings-3.1.1.tgz"
+    },
+    "lodash.uniq": {
+      "version": "4.5.0",
+      "from": "lodash.uniq@>=4.5.0 <5.0.0",
+      "resolved": "https://registry.npm.taobao.org/lodash.uniq/download/lodash.uniq-4.5.0.tgz"
     },
     "logalot": {
       "version": "2.1.0",
@@ -3077,6 +3229,11 @@
       "from": "lru-cache@>=4.0.1 <5.0.0",
       "resolved": "https://registry.npmjs.org/lru-cache/-/lru-cache-4.1.1.tgz"
     },
+    "macaddress": {
+      "version": "0.2.8",
+      "from": "macaddress@>=0.2.8 <0.3.0",
+      "resolved": "https://registry.npmjs.org/macaddress/-/macaddress-0.2.8.tgz"
+    },
     "make-dir": {
       "version": "1.0.0",
       "from": "make-dir@>=1.0.0 <2.0.0",
@@ -3096,6 +3253,11 @@
       "version": "1.7.0",
       "from": "marked-terminal@>=1.6.2 <2.0.0",
       "resolved": "https://registry.npm.taobao.org/marked-terminal/download/marked-terminal-1.7.0.tgz"
+    },
+    "math-expression-evaluator": {
+      "version": "1.2.17",
+      "from": "math-expression-evaluator@>=1.2.14 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/math-expression-evaluator/download/math-expression-evaluator-1.2.17.tgz"
     },
     "md5": {
       "version": "2.2.1",
@@ -3389,6 +3551,11 @@
       "from": "normalize-range@>=0.1.2 <0.2.0",
       "resolved": "https://registry.npmjs.org/normalize-range/-/normalize-range-0.1.2.tgz"
     },
+    "normalize-url": {
+      "version": "1.9.1",
+      "from": "normalize-url@>=1.4.0 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/normalize-url/download/normalize-url-1.9.1.tgz"
+    },
     "npm-run-path": {
       "version": "2.0.2",
       "from": "npm-run-path@>=2.0.0 <3.0.0",
@@ -3556,6 +3723,11 @@
       "from": "param-case@>=2.1.0 <2.2.0",
       "resolved": "https://registry.npm.taobao.org/param-case/download/param-case-2.1.1.tgz"
     },
+    "parchment": {
+      "version": "1.0.9",
+      "from": "parchment@1.0.9",
+      "resolved": "https://registry.npm.taobao.org/parchment/download/parchment-1.0.9.tgz"
+    },
     "parse-asn1": {
       "version": "5.1.0",
       "from": "parse-asn1@>=5.0.0 <6.0.0",
@@ -3691,6 +3863,51 @@
       "from": "postcss@>=5.2.16 <6.0.0",
       "resolved": "https://registry.npmjs.org/postcss/-/postcss-5.2.17.tgz"
     },
+    "postcss-calc": {
+      "version": "5.3.1",
+      "from": "postcss-calc@>=5.2.0 <6.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-calc/download/postcss-calc-5.3.1.tgz"
+    },
+    "postcss-colormin": {
+      "version": "2.2.2",
+      "from": "postcss-colormin@>=2.1.8 <3.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-colormin/download/postcss-colormin-2.2.2.tgz"
+    },
+    "postcss-convert-values": {
+      "version": "2.6.1",
+      "from": "postcss-convert-values@>=2.3.4 <3.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-convert-values/download/postcss-convert-values-2.6.1.tgz"
+    },
+    "postcss-discard-comments": {
+      "version": "2.0.4",
+      "from": "postcss-discard-comments@>=2.0.4 <3.0.0",
+      "resolved": "https://registry.npmjs.org/postcss-discard-comments/-/postcss-discard-comments-2.0.4.tgz"
+    },
+    "postcss-discard-duplicates": {
+      "version": "2.1.0",
+      "from": "postcss-discard-duplicates@>=2.0.1 <3.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-discard-duplicates/download/postcss-discard-duplicates-2.1.0.tgz"
+    },
+    "postcss-discard-empty": {
+      "version": "2.1.0",
+      "from": "postcss-discard-empty@>=2.0.1 <3.0.0",
+      "resolved": "https://registry.npmjs.org/postcss-discard-empty/-/postcss-discard-empty-2.1.0.tgz"
+    },
+    "postcss-discard-overridden": {
+      "version": "0.1.1",
+      "from": "postcss-discard-overridden@>=0.1.1 <0.2.0",
+      "resolved": "https://registry.npmjs.org/postcss-discard-overridden/-/postcss-discard-overridden-0.1.1.tgz"
+    },
+    "postcss-discard-unused": {
+      "version": "2.2.3",
+      "from": "postcss-discard-unused@>=2.2.1 <3.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-discard-unused/download/postcss-discard-unused-2.2.3.tgz"
+    },
+    "postcss-filter-plugins": {
+      "version": "2.0.2",
+      "from": "postcss-filter-plugins@>=2.0.0 <3.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-filter-plugins/download/postcss-filter-plugins-2.0.2.tgz"
+    },
     "postcss-load-config": {
       "version": "1.2.0",
       "from": "postcss-load-config@>=1.0.0 <2.0.0",
@@ -3718,15 +3935,188 @@
         }
       }
     },
+    "postcss-merge-idents": {
+      "version": "2.1.7",
+      "from": "postcss-merge-idents@>=2.1.5 <3.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-merge-idents/download/postcss-merge-idents-2.1.7.tgz"
+    },
+    "postcss-merge-longhand": {
+      "version": "2.0.2",
+      "from": "postcss-merge-longhand@>=2.0.1 <3.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-merge-longhand/download/postcss-merge-longhand-2.0.2.tgz"
+    },
+    "postcss-merge-rules": {
+      "version": "2.1.2",
+      "from": "postcss-merge-rules@>=2.0.3 <3.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-merge-rules/download/postcss-merge-rules-2.1.2.tgz"
+    },
+    "postcss-message-helpers": {
+      "version": "2.0.0",
+      "from": "postcss-message-helpers@>=2.0.0 <3.0.0",
+      "resolved": "https://registry.npmjs.org/postcss-message-helpers/-/postcss-message-helpers-2.0.0.tgz"
+    },
+    "postcss-minify-font-values": {
+      "version": "1.0.5",
+      "from": "postcss-minify-font-values@>=1.0.2 <2.0.0",
+      "resolved": "https://registry.npmjs.org/postcss-minify-font-values/-/postcss-minify-font-values-1.0.5.tgz"
+    },
+    "postcss-minify-gradients": {
+      "version": "1.0.5",
+      "from": "postcss-minify-gradients@>=1.0.1 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-minify-gradients/download/postcss-minify-gradients-1.0.5.tgz"
+    },
+    "postcss-minify-params": {
+      "version": "1.2.2",
+      "from": "postcss-minify-params@>=1.0.4 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-minify-params/download/postcss-minify-params-1.2.2.tgz"
+    },
+    "postcss-minify-selectors": {
+      "version": "2.1.1",
+      "from": "postcss-minify-selectors@>=2.0.4 <3.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-minify-selectors/download/postcss-minify-selectors-2.1.1.tgz"
+    },
+    "postcss-modules-extract-imports": {
+      "version": "1.1.0",
+      "from": "postcss-modules-extract-imports@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-modules-extract-imports/download/postcss-modules-extract-imports-1.1.0.tgz",
+      "dependencies": {
+        "has-flag": {
+          "version": "2.0.0",
+          "from": "has-flag@>=2.0.0 <3.0.0",
+          "resolved": "https://registry.npm.taobao.org/has-flag/download/has-flag-2.0.0.tgz"
+        },
+        "postcss": {
+          "version": "6.0.3",
+          "from": "postcss@>=6.0.1 <7.0.0",
+          "resolved": "https://registry.npm.taobao.org/postcss/download/postcss-6.0.3.tgz"
+        },
+        "supports-color": {
+          "version": "4.0.0",
+          "from": "supports-color@>=4.0.0 <5.0.0",
+          "resolved": "https://registry.npm.taobao.org/supports-color/download/supports-color-4.0.0.tgz"
+        }
+      }
+    },
+    "postcss-modules-local-by-default": {
+      "version": "1.2.0",
+      "from": "postcss-modules-local-by-default@>=1.0.1 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-modules-local-by-default/download/postcss-modules-local-by-default-1.2.0.tgz",
+      "dependencies": {
+        "has-flag": {
+          "version": "2.0.0",
+          "from": "has-flag@^2.0.0",
+          "resolved": "http://registry.npm.taobao.org/has-flag/download/has-flag-2.0.0.tgz"
+        },
+        "postcss": {
+          "version": "6.0.3",
+          "from": "postcss@^6.0.1",
+          "resolved": "http://registry.npm.taobao.org/postcss/download/postcss-6.0.3.tgz"
+        },
+        "supports-color": {
+          "version": "4.0.0",
+          "from": "supports-color@^4.0.0",
+          "resolved": "http://registry.npm.taobao.org/supports-color/download/supports-color-4.0.0.tgz"
+        }
+      }
+    },
+    "postcss-modules-scope": {
+      "version": "1.1.0",
+      "from": "postcss-modules-scope@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-modules-scope/download/postcss-modules-scope-1.1.0.tgz",
+      "dependencies": {
+        "has-flag": {
+          "version": "2.0.0",
+          "from": "has-flag@^2.0.0",
+          "resolved": "http://registry.npm.taobao.org/has-flag/download/has-flag-2.0.0.tgz"
+        },
+        "postcss": {
+          "version": "6.0.3",
+          "from": "postcss@^6.0.1",
+          "resolved": "http://registry.npm.taobao.org/postcss/download/postcss-6.0.3.tgz"
+        },
+        "supports-color": {
+          "version": "4.0.0",
+          "from": "supports-color@^4.0.0",
+          "resolved": "http://registry.npm.taobao.org/supports-color/download/supports-color-4.0.0.tgz"
+        }
+      }
+    },
+    "postcss-modules-values": {
+      "version": "1.3.0",
+      "from": "postcss-modules-values@>=1.1.0 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-modules-values/download/postcss-modules-values-1.3.0.tgz",
+      "dependencies": {
+        "has-flag": {
+          "version": "2.0.0",
+          "from": "has-flag@^2.0.0",
+          "resolved": "http://registry.npm.taobao.org/has-flag/download/has-flag-2.0.0.tgz"
+        },
+        "postcss": {
+          "version": "6.0.3",
+          "from": "postcss@^6.0.1",
+          "resolved": "http://registry.npm.taobao.org/postcss/download/postcss-6.0.3.tgz"
+        },
+        "supports-color": {
+          "version": "4.0.0",
+          "from": "supports-color@^4.0.0",
+          "resolved": "http://registry.npm.taobao.org/supports-color/download/supports-color-4.0.0.tgz"
+        }
+      }
+    },
+    "postcss-normalize-charset": {
+      "version": "1.1.1",
+      "from": "postcss-normalize-charset@>=1.1.0 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-normalize-charset/download/postcss-normalize-charset-1.1.1.tgz"
+    },
+    "postcss-normalize-url": {
+      "version": "3.0.8",
+      "from": "postcss-normalize-url@>=3.0.7 <4.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-normalize-url/download/postcss-normalize-url-3.0.8.tgz"
+    },
+    "postcss-ordered-values": {
+      "version": "2.2.3",
+      "from": "postcss-ordered-values@>=2.1.0 <3.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-ordered-values/download/postcss-ordered-values-2.2.3.tgz"
+    },
+    "postcss-reduce-idents": {
+      "version": "2.4.0",
+      "from": "postcss-reduce-idents@>=2.2.2 <3.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-reduce-idents/download/postcss-reduce-idents-2.4.0.tgz"
+    },
+    "postcss-reduce-initial": {
+      "version": "1.0.1",
+      "from": "postcss-reduce-initial@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-reduce-initial/download/postcss-reduce-initial-1.0.1.tgz"
+    },
+    "postcss-reduce-transforms": {
+      "version": "1.0.4",
+      "from": "postcss-reduce-transforms@>=1.0.3 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-reduce-transforms/download/postcss-reduce-transforms-1.0.4.tgz"
+    },
     "postcss-selector-parser": {
       "version": "2.2.3",
       "from": "postcss-selector-parser@>=2.0.0 <3.0.0",
       "resolved": "https://registry.npm.taobao.org/postcss-selector-parser/download/postcss-selector-parser-2.2.3.tgz"
     },
+    "postcss-svgo": {
+      "version": "2.1.6",
+      "from": "postcss-svgo@>=2.1.1 <3.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-svgo/download/postcss-svgo-2.1.6.tgz"
+    },
+    "postcss-unique-selectors": {
+      "version": "2.0.2",
+      "from": "postcss-unique-selectors@>=2.0.2 <3.0.0",
+      "resolved": "https://registry.npmjs.org/postcss-unique-selectors/-/postcss-unique-selectors-2.0.2.tgz"
+    },
     "postcss-value-parser": {
       "version": "3.3.0",
       "from": "postcss-value-parser@>=3.2.3 <4.0.0",
       "resolved": "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-3.3.0.tgz"
+    },
+    "postcss-zindex": {
+      "version": "2.2.0",
+      "from": "postcss-zindex@>=2.0.1 <3.0.0",
+      "resolved": "https://registry.npm.taobao.org/postcss-zindex/download/postcss-zindex-2.2.0.tgz"
     },
     "prepend-http": {
       "version": "1.0.4",
@@ -3798,6 +4188,11 @@
       "from": "qs@6.2.1",
       "resolved": "https://registry.npmjs.org/qs/-/qs-6.2.1.tgz"
     },
+    "query-string": {
+      "version": "4.3.4",
+      "from": "query-string@>=4.1.0 <5.0.0",
+      "resolved": "https://registry.npm.taobao.org/query-string/download/query-string-4.3.4.tgz"
+    },
     "querystring": {
       "version": "0.2.0",
       "from": "querystring@0.2.0",
@@ -3812,6 +4207,28 @@
       "version": "0.0.4",
       "from": "querystringify@>=0.0.0 <0.1.0",
       "resolved": "https://registry.npm.taobao.org/querystringify/download/querystringify-0.0.4.tgz"
+    },
+    "quill": {
+      "version": "1.2.6",
+      "from": "quill@>=1.1.7 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/quill/download/quill-1.2.6.tgz",
+      "dependencies": {
+        "clone": {
+          "version": "2.1.1",
+          "from": "clone@>=2.1.1 <2.2.0",
+          "resolved": "https://registry.npm.taobao.org/clone/download/clone-2.1.1.tgz"
+        },
+        "eventemitter3": {
+          "version": "2.0.3",
+          "from": "eventemitter3@>=2.0.3 <2.1.0",
+          "resolved": "https://registry.npm.taobao.org/eventemitter3/download/eventemitter3-2.0.3.tgz"
+        }
+      }
+    },
+    "quill-delta": {
+      "version": "3.5.0",
+      "from": "quill-delta@3.5.0",
+      "resolved": "https://registry.npm.taobao.org/quill-delta/download/quill-delta-3.5.0.tgz"
     },
     "randomatic": {
       "version": "1.1.7",
@@ -3903,6 +4320,30 @@
           "version": "3.0.0",
           "from": "esprima@>=3.0.0 <3.1.0",
           "resolved": "https://registry.npm.taobao.org/esprima/download/esprima-3.0.0.tgz"
+        }
+      }
+    },
+    "reduce-css-calc": {
+      "version": "1.3.0",
+      "from": "reduce-css-calc@>=1.2.6 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/reduce-css-calc/download/reduce-css-calc-1.3.0.tgz",
+      "dependencies": {
+        "balanced-match": {
+          "version": "0.4.2",
+          "from": "balanced-match@>=0.4.2 <0.5.0",
+          "resolved": "https://registry.npmjs.org/balanced-match/-/balanced-match-0.4.2.tgz"
+        }
+      }
+    },
+    "reduce-function-call": {
+      "version": "1.0.2",
+      "from": "reduce-function-call@>=1.0.1 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/reduce-function-call/download/reduce-function-call-1.0.2.tgz",
+      "dependencies": {
+        "balanced-match": {
+          "version": "0.4.2",
+          "from": "balanced-match@^0.4.2",
+          "resolved": "http://registry.npm.taobao.org/balanced-match/download/balanced-match-0.4.2.tgz"
         }
       }
     },
@@ -4413,6 +4854,11 @@
         }
       }
     },
+    "sort-keys": {
+      "version": "1.1.2",
+      "from": "sort-keys@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npmjs.org/sort-keys/-/sort-keys-1.1.2.tgz"
+    },
     "source-list-map": {
       "version": "0.1.8",
       "from": "source-list-map@>=0.1.4 <0.2.0",
@@ -4534,6 +4980,11 @@
       "version": "0.1.3",
       "from": "stream-throttle@>=0.1.3 <0.2.0",
       "resolved": "https://registry.npmjs.org/stream-throttle/-/stream-throttle-0.1.3.tgz"
+    },
+    "strict-uri-encode": {
+      "version": "1.1.0",
+      "from": "strict-uri-encode@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npmjs.org/strict-uri-encode/-/strict-uri-encode-1.1.0.tgz"
     },
     "string_decoder": {
       "version": "1.0.3",
@@ -4658,6 +5109,11 @@
       "version": "3.1.0",
       "from": "tfunk@>=3.0.1 <4.0.0",
       "resolved": "https://registry.npmjs.org/tfunk/-/tfunk-3.1.0.tgz"
+    },
+    "throttle-debounce": {
+      "version": "1.0.1",
+      "from": "throttle-debounce@>=1.0.1 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/throttle-debounce/download/throttle-debounce-1.0.1.tgz"
     },
     "through": {
       "version": "2.3.8",
@@ -4830,6 +5286,16 @@
       "from": "uniq@>=1.0.1 <2.0.0",
       "resolved": "https://registry.npmjs.org/uniq/-/uniq-1.0.1.tgz"
     },
+    "uniqid": {
+      "version": "4.1.1",
+      "from": "uniqid@>=4.0.0 <5.0.0",
+      "resolved": "https://registry.npm.taobao.org/uniqid/download/uniqid-4.1.1.tgz"
+    },
+    "uniqs": {
+      "version": "2.0.0",
+      "from": "uniqs@>=2.0.0 <3.0.0",
+      "resolved": "https://registry.npmjs.org/uniqs/-/uniqs-2.0.0.tgz"
+    },
     "unique-stream": {
       "version": "2.2.1",
       "from": "unique-stream@>=2.0.2 <3.0.0",
@@ -4935,6 +5401,11 @@
       "version": "1.1.1",
       "from": "vary@>=1.1.0 <1.2.0",
       "resolved": "https://registry.npm.taobao.org/vary/download/vary-1.1.1.tgz"
+    },
+    "vendors": {
+      "version": "1.0.1",
+      "from": "vendors@>=1.0.0 <2.0.0",
+      "resolved": "https://registry.npm.taobao.org/vendors/download/vendors-1.0.1.tgz"
     },
     "verror": {
       "version": "1.3.6",
@@ -5329,6 +5800,11 @@
       "version": "0.1.2",
       "from": "yeast@0.1.2",
       "resolved": "https://registry.npmjs.org/yeast/-/yeast-0.1.2.tgz"
+    },
+    "zrender": {
+      "version": "3.5.2",
+      "from": "zrender@>=3.5.2 <4.0.0",
+      "resolved": "https://registry.npm.taobao.org/zrender/download/zrender-3.5.2.tgz"
     }
   }
 }
