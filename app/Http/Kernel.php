@@ -14,6 +14,11 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $middleware = [
+        /**
+         * Process Laravel's Request Data for chrome debug panel viewer
+         */
+        \Clockwork\Support\Laravel\ClockworkMiddleware::class,
+
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,

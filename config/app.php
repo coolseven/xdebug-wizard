@@ -182,6 +182,12 @@ return [
          */
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
+        /**
+         * laravel request viewer in chrome debug panel
+         * https://github.com/itsgoingd/clockwork
+         */
+        Clockwork\Support\Laravel\ClockworkServiceProvider::class,
+
     ],
 
     /*
