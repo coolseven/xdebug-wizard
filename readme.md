@@ -6,7 +6,7 @@
 
 xdebug is a very helpful tool in php development, but setting up xdebug in your server and your IDE/editor is sometimes painful and confusing. 
 
-This website tries to make your life easier by offering an intuitive, step-by-step gui that goes through xdebug's Introduction, Configuration ,Trouble Shooting and more.
+This website tries to make your life easier by offering an intuitive, step-by-step gui that goes through xdebug's Introduction, Configuration ,Trouble Shooting ,Tookits and more.
 
 
 
@@ -25,6 +25,7 @@ run `git clone https://github.com/coolseven/xdebug-wizard` or `composer create-p
 
 -   run `composer install`
 -   run `cp .evn.example .env`
+-   run `php artisan key:generate`
 
 #### 3. Install JavaScript Dependency
 
