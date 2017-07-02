@@ -15,4 +15,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/{missing}', function () {
+    return view('welcome');
+});
+
 Route::get('/hello/world','HelloController@world');
+
+Route::get('/api/ping','ApiController@pong');
+
+Route::get('/xdebug-wizard','XdebugWizardController@home');
+
+Route::get('/xdebug-wizard/{any}','XdebugWizardController@redirect');

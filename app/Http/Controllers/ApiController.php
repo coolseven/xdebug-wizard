@@ -5,12 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
-class HelloController extends Controller
+class ApiController extends Controller
 {
-    public function world( Request $request )
-    {
-        return '<h1>Hello World</h1>';
-    }
 
     public function pong(Request $request)
     {
