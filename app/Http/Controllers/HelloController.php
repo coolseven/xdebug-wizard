@@ -11,9 +11,4 @@ class HelloController extends Controller
     {
         return '<h1>Hello World</h1>';
     }
-
-    public function pong(Request $request)
-    {
-        return new JsonResponse('pong√');
-    }
 }

@@ -18,6 +18,11 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
+// Register ElementUI
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-default/index.css';
+Vue.use(ElementUI);
+
 // App Component Served as a top level router-view container
 import App from './App.vue';
 

@@ -1,7 +1,13 @@
 <template>
     <div>
-        <h1>This is the Example Component</h1>
-        <h3>{{ reply }}</h3>
+        <el-row>
+            <el-col :span="12" :offset="6">
+                <h1>This is the Example Component</h1>
+                <el-card v-loading="cardLoading" class="box-card">
+                    <h3>{{ reply }}</h3>
+                </el-card>
+            </el-col>
+        </el-row>
     </div>
 </template>
 
@@ -11,14 +17,18 @@
     export default {
         data(){
             return {
-                reply:'ping...'
+                reply:'ping...',
+                cardLoading: false,
             }
         },
         methods:{
             testApi(){
+                this.cardLoading = true;
                 axios.get('/api/ping').then(res => {
                     this.reply = res.data; // expect 'pong'
+                    this.cardLoading = false;
                 }).catch(()=>{
+                    this.cardLoading = false;
                     console.error('ajax request by axios failed!');
                 })
             }
@@ -30,9 +40,3 @@
     }
 </script>
 
-<style scoped="scoped">
-    div{
-        width: 1200px;
-        margin-left:auto;
-    }
-</style>
