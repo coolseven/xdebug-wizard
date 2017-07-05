@@ -14,13 +14,13 @@
         <el-row class="main">
             <el-col :span="2">
                 <aside>
-                    <el-menu default-active="2" class="el-menu-vertical-demo" theme="dark" @select="sideMenuSelected">
+                    <el-menu default-active="introduction" class="el-menu-vertical-demo" theme="dark" @select="sideMenuSelected">
                           <el-menu-item index="introduction">Introduction</el-menu-item>
-                          <el-submenu index="1">
+                          <el-submenu index="setup">
                                 <template slot="title">Setup</template>
                                 <el-menu-item index="xdebug.so">xdebug.so</el-menu-item>
                                 <el-menu-item index="xdebug.ini">xdebug.ini</el-menu-item>
-                                <el-menu-item index="xdebug client">xdebug client</el-menu-item>
+                                <el-menu-item index="xdebug-clients">xdebug client</el-menu-item>
                           </el-submenu>
                           <el-menu-item index="advanced-options">Advanced Options</el-menu-item>
                           <el-menu-item index="more">More</el-menu-item>
@@ -46,15 +46,27 @@
             }
         },
         methods:{
-            sideMenuSelected(key,keyPath){
-                console.log(key, keyPath);
+            sideMenuSelected(menuName,menuNameStack){
                 this.$router.push({name:'Introduction'})
             }
+        },
+        created(){
+            let matchedRoutePath = '';
+            let defaultRoutePath = '/example';
+            let matchedQuery     = undefined;
+            if( this.$route.query._path && this.$route.query._path != ''){
+                matchedRoutePath = this.$route.query._path;
+                matchedQuery     = this.$route.query._query;
+            }else{
+                matchedRoutePath = defaultRoutePath;
+            }
+
+            this.$router.replace({path:matchedRoutePath,query: matchedQuery})
         }
     }
 </script>
 
-<style scope="scoped">
+<style>
     html{
         font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
     }
