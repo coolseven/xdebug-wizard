@@ -1,0 +1,5 @@
+- [ ] [FE] deal with '404'  (when vuejs found no match for current url )
+- [ ] [FE] import fontawesome 
+- [ ] [FE] remove unneeded imports (such as bootstrap because we are now using element-ui)
+- [ ] [BE] remove unneeded middlewares ,functions and modules (such as Laravel's embedded Auth Module )
+- [ ] [BE] seperate Page Service and Api Service (using different namespace and middlewares)

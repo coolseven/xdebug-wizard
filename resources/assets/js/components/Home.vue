@@ -14,7 +14,7 @@
         <el-row class="main">
             <el-col :span="2">
                 <aside>
-                    <el-menu default-active="introduction" class="el-menu-vertical-demo" theme="dark" @select="sideMenuSelected">
+                    <el-menu default-active="introduction" theme="dark" @select="sideMenuSelected">
                           <el-menu-item index="introduction">Introduction</el-menu-item>
                           <el-submenu index="setup">
                                 <template slot="title">Setup</template>
@@ -42,26 +42,29 @@
     export default {
         data(){
             return {
-                activeIndex: '1',
+                activeIndex : '1',
+                defaultRoute : { name : 'Example'}
             }
         },
         methods:{
             sideMenuSelected(menuName,menuNameStack){
                 this.$router.push({name:'Introduction'})
+            },
+            getRoute(){
+                let matchedRoute = undefined;
+
+                if( this.$route.query._path && this.$route.query._path != ''){
+                    matchedRoute = {
+                        path : this.$route.query._path,
+                        query : this.$route.query._query
+                    }
+                }
+                return matchedRoute ? matchedRoute : this.defaultRoute;
             }
         },
         created(){
-            let matchedRoutePath = '';
-            let defaultRoutePath = '/example';
-            let matchedQuery     = undefined;
-            if( this.$route.query._path && this.$route.query._path != ''){
-                matchedRoutePath = this.$route.query._path;
-                matchedQuery     = this.$route.query._query;
-            }else{
-                matchedRoutePath = defaultRoutePath;
-            }
-
-            this.$router.replace({path:matchedRoutePath,query: matchedQuery})
+            let targetRoute = this.getRoute();
+            this.$router.replace(targetRoute);
         }
     }
 </script>
