@@ -3,3 +3,4 @@
 - [ ] [FE] remove unneeded imports (such as bootstrap because we are now using element-ui)
 - [ ] [BE] remove unneeded middlewares ,functions and modules (such as Laravel's embedded Auth Module )
 - [ ] [BE] seperate Page Service and Api Service (using different namespace and middlewares)
+- [ ] [FE] add a button to show/hide the left side menu
