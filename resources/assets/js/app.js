@@ -17,8 +17,6 @@ import 'element-ui/lib/theme-default/index.css';
 Vue.use(ElementUI);
 
 // The App Component Will be Served as the top-level router-view container
-// by now only the wizard module will fit into App component 
-// in the future, we may have admin module or more.
 import App from './App.vue';
 
 // Setup application routes
@@ -30,7 +28,7 @@ const router = new VueRouter({
 
 
 /**
- * Create a Vue Instance With VueRouter and an App Component
+ * Create a Vue Instance With VueRouter and App Component and
  * Mount the Vue Instance to the <div id="app"> element
  */
 const app = new Vue({

@@ -22,14 +22,11 @@ import jsCookie from 'js-cookie';
 import axios from 'axios';
 
 /**
- * Next we will register the CSRF Token as a common header with Axios so that
- * all outgoing HTTP requests automatically have it attached. This is just
- * a simple convenience so we don't have to attach every token manually.
+ * Register the XSRFToken as a common header with Axios.
  *
  * Note:
- * Register the XSRFToken as a common header with Axios
- * Instead of CSRFToken(in the meta section of the page)(Laravel's default)
- * Thus we don't have to care about the meta section of the page
+ * We use XSRFToken instead of CSRFToken (Laravel's default)
+ * So that we don't have to care about the meta section of the page
  */
 let XSRFToken = jsCookie.get('XSRF-TOKEN');
 if (XSRFToken) {
