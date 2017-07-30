@@ -22,20 +22,19 @@
             }
         },
         methods:{
-            testApi(){
+            apiTest(){
                 this.cardLoading = true;
-                axios.get('/api/ping').then(res => {
+                axios.get('/api/ping').then((res) => {
                     this.reply = res.data; // expect 'pong'
                     this.cardLoading = false;
-                }).catch(()=>{
+                }).catch(() => {
                     this.cardLoading = false;
                     console.error('ajax request by axios failed!');
                 })
             }
         },
         mounted() {
-            console.log(this.$route);
-            this.testApi();
+            this.apiTest();
         }
     }
 </script>

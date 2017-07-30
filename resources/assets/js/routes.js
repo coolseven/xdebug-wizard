@@ -4,6 +4,8 @@
 import Home     from './components/Home.vue';
 import Example  from './components/Example.vue';
 import Introduction from './components/introduction/introduction.vue';
+import NotFound from './404.vue';
+
 
 export default [
 
@@ -12,6 +14,9 @@ export default [
             { path: '/introduction', name:'Introduction', component:  Introduction  },
             { path: '/example', name:'Example', component:  Example  }
         ]
+    },
+    {
+        path:'*' ,name:'404' ,component: NotFound
     }
 
 ]

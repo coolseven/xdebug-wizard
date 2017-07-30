@@ -43,28 +43,16 @@
         data(){
             return {
                 activeIndex : '1',
-                defaultRoute : { name : 'Example'}
+                defaultRoutePath : '/example'
             }
         },
         methods:{
-            sideMenuSelected(menuName,menuNameStack){
+            sideMenuSelected(menuName,menuNames){
                 this.$router.push({name:'Introduction'})
-            },
-            getRoute(){
-                let matchedRoute = undefined;
-
-                if( this.$route.query._path && this.$route.query._path != ''){
-                    matchedRoute = {
-                        path : this.$route.query._path,
-                        query : this.$route.query._query
-                    }
-                }
-                return matchedRoute ? matchedRoute : this.defaultRoute;
             }
         },
         created(){
-            let targetRoute = this.getRoute();
-            this.$router.replace(targetRoute);
+
         }
     }
 </script>

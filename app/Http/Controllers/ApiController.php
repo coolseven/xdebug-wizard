@@ -1,15 +1,22 @@
 <?php
+/**
+ * Created for xdebug-wizard.
+ * File: ApiController.php
+ * User: cools
+ * Date: 2017/7/30 0030
+ * Time: 23:14
+ * Description :
+ */
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 
 class ApiController extends Controller
 {
-
-    public function pong(Request $request)
+    public function pong()
     {
-        return new JsonResponse('pong√');
+        return new JsonResponse('pong');
     }
 }
