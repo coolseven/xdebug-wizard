@@ -1,29 +1,18 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 /**
- * this is a test page, feel free to delete this route
+ * this route is for test only, feel free to delete it.
  */
 Route::get( '/welcome', function () {
     return view( 'welcome' );
 } );
 
 /**
- * In an SPA , most of the requests are ajax requests,
- * and page request only happens when a user opens our webapp or refreshes a page when using the webapp.
+ * This web app is a SPA ,so most of the requests are ajax requests,
+ * and page requests happen only when a user opens our web app or refreshes the page.
  *
- * Whichever page is requested, we always return the same content.
- * the content contains nothing but the html structure and the webapp js files.
- * and the webapp js files will render the real page content.
+ * We always return the same content for page requests,
+ * which contains nothing but the html structure and the app.js file.
+ * and the app.js file will do all the rest for us.
  */
 Route::get( '{app}', 'PageController@app' )->where( 'app', '.*' );
