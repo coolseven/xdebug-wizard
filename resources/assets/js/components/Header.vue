@@ -1,7 +1,7 @@
 <template>
     <el-row class="header">
         <el-col :span="2" class="logo">
-            <span class="logo-text">Xdebug-Wizard</span>
+            <span class="logo-text">{{appName}}</span>
         </el-col>
         <el-col :span="22">
             <el-menu theme="dark" mode="horizontal">
@@ -11,3 +11,10 @@
         </el-col>
     </el-row>
 </template>
+<script>
+    export default{
+        props:[
+           'appName'
+        ]
+    }
+</script>

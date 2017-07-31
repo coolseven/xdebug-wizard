@@ -1,6 +1,6 @@
 <template>
     <div>
-        <app-header></app-header>
+        <app-header :appName="appName"></app-header>
         <app-main></app-main>
     </div>
 </template>
@@ -12,6 +12,11 @@
     import AppMain   from './components/Main.vue';
 
     export default {
+        data(){
+            return {
+                appName: 'Xdebug-Wizard'
+            }
+        },
         components:{
             AppHeader,AppMain
         }
