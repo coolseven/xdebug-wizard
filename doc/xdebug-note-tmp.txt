@@ -1,0 +1,53 @@
+- disabled (as a whole)
+
+- VarDump
+	- cli-color 			([0/1/2],0) (used by var_dump in cli mode)
+	- default_enable		([0/1], 1)	(showing stacktraces on an error event)	 
+	- dump_globals			([0/1],1)	(whether the values of the xdebug.dump.* settings should be shown or not)
+	- dump.*				([*,Empty,COOKIE, FILES, GET, POST, REQUEST, SERVER, SESSION])	(define what to show when dump_globals set to 1)
+	- dump_once				([0/1],1)	(whether the values of the superglobals should be dumped on all error situations (set to 0) or only on the first (set to 1).)
+	- dump_undefined		([0/1],0)	(whether to dump undefined values from the superglobals)
+	- force_display_errors	([0/1],0)	(overide the setting of PHP's display_errors)
+	- force_error_reporting	(MASK,0)	(overide the setting of PHP's display_errors)
+	- manual_url			(string, '')	(the base url of closest mirror of manual for the links from the function traces and error message)
+	- max_stack_frames		(integer, 256)	(how many stack frames are shown in stack traces)
+	- overload_var_dump		([0/1/2], 2) 	(make var_dump better)
+
+- Trace
+	- auto-trace          ([0/1], 0)
+	- collect_assignments ([0/1] , 0) 	(whether Xdebug should add variable assignments to function traces.)
+	- collect_includes	  ([0/1] , 1) 	(whether Xdebug should write the filename used in include(), include_once(), require() or require_once() to the trace files.)
+	- collect_params	  ([0/1/2/3/4/5] , 0) (whether Xdebug should collect the parameters passed to functions)
+	- collect_return	  ([0/1] , 0) 	(whether Xdebug should write the return value of function calls)
+	- collect_vars        ([0/1] , 0) 	(whether to gather information about which variables are used in a certain scope)
+	- file_link_format	  (string, '') 	( format of the links of stack traces where file names are used)
+
+
+- Profile
+	- profiler_enable				([0/1], 1)	(On/Off Switch)
+    - coverage_enable				([0/1], 1)	(Code Coverage Analysis)
+    - profiler_aggregate			([0/1], 0)	(generate a single file for multiple requests to calc the average result during it is set to 1)
+    - profiler_append				([0/1], 0)	(overide or append the output of request to the file)
+    - profiler_enable_trigger		([0/1], 1)	(works with profiler_enable_trigger_value and works only when profiler_enable=Off)
+    - profiler_enable_trigger_value	(string, '')	(works with profiler_enable_trigger)
+    - profiler_output_dir			(string, '')	(The directory where the profiler output will be written to)
+    - profiler_output_name			(string, '')	(the name of the file that is used to dump traces into)
+
+
+- Debug
+	- extended_info			([0/1], 1)		(allows Xdebug to do file/line breakpoints with the remote debugger)
+	- idekey				(string, '')	(which IDE Key Xdebug should pass on to the DBGp debugger handler, environment variable related)
+
+- Remote Debug
+	- remote_enable					([0/1], 1)				(On/Off Switch)
+	- remote_addr_header			(string, '')			(the key of $SERVER to be used to find the IP address or hostname, works only when remote_connect_back=On)
+	- remote_connect_back			([0/1], 0)				(ignore remote_host and works with remote_addr_header instead to connect to the client)
+	- remote_host					(string, 'localhost')	(Selects the host/ip where the debug client is running,ignored if xdebug.remote_connect_back)
+	- remote_autostart				([0/1], 0)				(always attempt to start a remote debugging session)
+	- remote_cookie_expire_time		(integer, 3600)			(the time that the remote debugging session stays alive via the session cookie.)
+	- remote_handler				(string, 'dbgp')		(Xdebug 2.1 and later only support 'dbgp' as protocol.)
+	- remote_log					(string, '')			(filename to a file to which all remote debugger communications are logged)
+
+- Runtime
+	- halt_level		(MASK,0)		(convert all notices and warnings into errors)
+	- max_nesting_level (integer, 256)	(the maximum level of nested functions that are allowed)
