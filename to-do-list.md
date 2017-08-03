@@ -5,3 +5,4 @@
 - [x] [BE] seperate Page Service and Api Service (~~using different namespace and middlewares~~)
 - [ ] [FE] add a button to show/hide the left side menu
 - [ ] [FE] add transition effect to route
+- [ ] [BE] add feature: enable user to test php code with different xdebug configurations
