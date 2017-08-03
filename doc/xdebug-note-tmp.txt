@@ -1,26 +1,39 @@
 - disabled (as a whole)
 
 - VarDump
-	- cli-color 			([0/1/2],0) (used by var_dump in cli mode)
-	- default_enable		([0/1], 1)	(showing stacktraces on an error event)	 
-	- dump_globals			([0/1],1)	(whether the values of the xdebug.dump.* settings should be shown or not)
-	- dump.*				([*,Empty,COOKIE, FILES, GET, POST, REQUEST, SERVER, SESSION])	(define what to show when dump_globals set to 1)
-	- dump_once				([0/1],1)	(whether the values of the superglobals should be dumped on all error situations (set to 0) or only on the first (set to 1).)
-	- dump_undefined		([0/1],0)	(whether to dump undefined values from the superglobals)
-	- force_display_errors	([0/1],0)	(overide the setting of PHP's display_errors)
-	- force_error_reporting	(MASK,0)	(overide the setting of PHP's display_errors)
-	- manual_url			(string, '')	(the base url of closest mirror of manual for the links from the function traces and error message)
-	- max_stack_frames		(integer, 256)	(how many stack frames are shown in stack traces)
-	- overload_var_dump		([0/1/2], 2) 	(make var_dump better)
+	- cli-color 				([0/1/2],0) (used by var_dump in cli mode)
+	- default_enable			([0/1], 1)	(showing stacktraces on an error event)
+	- dump_globals				([0/1],1)	(whether the values of the xdebug.dump.* settings should be shown or not)
+	- dump.*					([*,Empty,COOKIE, FILES, GET, POST, REQUEST, SERVER, SESSION])	(define what to show when dump_globals set to 1)
+	- dump_once					([0/1],1)	(whether the values of the superglobals should be dumped on all error situations (set to 0) or only on the first (set to 1).)
+	- dump_undefined			([0/1],0)	(whether to dump undefined values from the superglobals)
+	- force_display_errors		([0/1],0)	(overide the setting of PHP's display_errors)
+	- force_error_reporting		(MASK,0)	(overide the setting of PHP's display_errors)
+	- manual_url				(string, '')	(the base url of closest mirror of manual for the links from the function traces and error message)
+	- max_stack_frames			(integer, 256)	(how many stack frames are shown in stack traces)
+	- overload_var_dump			([0/1/2], 2) 	(make var_dump better)
+	- var_display_max_children  (integer, 128)	(the amount of array children and object's properties are shown when variables are displayed with either xdebug_var_dump(), xdebug.show_local_vars or through Function Traces.)
+	- var_display_max_data		(integer, 512)  (the maximum string length that is shown when variables are displayed with either xdebug_var_dump(), xdebug.show_local_vars or through Function Traces.)
+	- var_display_max_depth 	(integer, 3)    (how many nested levels of array elements and object properties are when variables are displayed with either xdebug_var_dump(), xdebug.show_local_vars or through Function Traces.)
+
+- StackDump
+	- show_local_vars		([0/1], 0)	(Xdebug's generated stack dumps in error situations will also show all variables in the top-most scope)
 
 - Trace
-	- auto-trace          ([0/1], 0)
-	- collect_assignments ([0/1] , 0) 	(whether Xdebug should add variable assignments to function traces.)
-	- collect_includes	  ([0/1] , 1) 	(whether Xdebug should write the filename used in include(), include_once(), require() or require_once() to the trace files.)
-	- collect_params	  ([0/1/2/3/4/5] , 0) (whether Xdebug should collect the parameters passed to functions)
-	- collect_return	  ([0/1] , 0) 	(whether Xdebug should write the return value of function calls)
-	- collect_vars        ([0/1] , 0) 	(whether to gather information about which variables are used in a certain scope)
-	- file_link_format	  (string, '') 	( format of the links of stack traces where file names are used)
+	- auto-trace          			([0/1], 0)			(tracing of function calls will be enabled just before the script is run)
+	- trace_enable_trigger			([0/1], 0)			(trigger the generation of trace files by using a trigger, works only when auto-trace is set to 0)
+	- trace_enable_trigger_value    (string,'')			(restrict who can make use of the XDEBUG_TRACE, works with trace_enable_trigger)
+	- trace_format					([0/1/2],0) 		(The format of the trace file.)
+	- trace_options					([0/1], 0)			(the trace files will be appended to or being overwritten in subsequent requests) 
+	- trace_output_dir				(string,'/tmp') 	(The directory where the tracing files will be written to)
+	- trace_output_name				(string,'trace.%c') (the name of the file that is used to dump traces into)
+	- collect_assignments 			([0/1] , 0) 		(whether Xdebug should add variable assignments to function traces.)
+	- collect_includes	  			([0/1] , 1) 		(whether Xdebug should write the filename used in include(), include_once(), require() or require_once() to the trace files.)
+	- collect_params	  			([0/1/2/3/4/5] , 0) (whether Xdebug should collect the parameters passed to functions)
+	- collect_return	  			([0/1] , 0) 		(whether Xdebug should write the return value of function calls)
+	- collect_vars        			([0/1] , 0) 		(whether to gather information about which variables are used in a certain scope)
+	- file_link_format	  			(string, '') 		( format of the links of stack traces where file names are used)
+	- show_mem_delta	  			([0/1] , 0)			(trace files will show the difference in memory usage between function calls.)	
 
 
 - Profile
@@ -40,14 +53,20 @@
 
 - Remote Debug
 	- remote_enable					([0/1], 1)				(On/Off Switch)
+	- remote_mode					(['req'/'jit'],'req')	(Selects when a debug connection is initiated)
 	- remote_addr_header			(string, '')			(the key of $SERVER to be used to find the IP address or hostname, works only when remote_connect_back=On)
 	- remote_connect_back			([0/1], 0)				(ignore remote_host and works with remote_addr_header instead to connect to the client)
 	- remote_host					(string, 'localhost')	(Selects the host/ip where the debug client is running,ignored if xdebug.remote_connect_back)
+	- remote_port 					(integer, 9000)			(The port to which Xdebug tries to connect on the remote host)
 	- remote_autostart				([0/1], 0)				(always attempt to start a remote debugging session)
 	- remote_cookie_expire_time		(integer, 3600)			(the time that the remote debugging session stays alive via the session cookie.)
 	- remote_handler				(string, 'dbgp')		(Xdebug 2.1 and later only support 'dbgp' as protocol.)
 	- remote_log					(string, '')			(filename to a file to which all remote debugger communications are logged)
 
+
 - Runtime
-	- halt_level		(MASK,0)		(convert all notices and warnings into errors)
-	- max_nesting_level (integer, 256)	(the maximum level of nested functions that are allowed)
+	- halt_level					(MASK,0)		(convert all notices and warnings into errors)
+	- max_nesting_level 			(integer, 256)	(the maximum level of nested functions that are allowed)
+	- scream	 					([0/1], 0)		(disable the @ (shut-up) operator)
+	- show_error_trace				([0/1], 0)		(show a stack trace whenever an Error is raised - even if this Error is actually caught)
+	- show_exception_trace			([0/1], 0)		(show a stack trace whenever an Exception or Error is raised - even if this Exception or Error is actually caught)
