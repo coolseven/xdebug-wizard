@@ -16,11 +16,14 @@ export default [
     {
         path: '/', name: 'Home', component: Home, children: [
             {
-                path: '/introduction', name: 'Introduction', component: Introduction
+                path: '', component: Introduction
             },
             {
-                path: '/example', name: 'Example', component: Example
+                path: 'introduction', name: 'Introduction', component: Introduction
             },
+            {
+                path: 'example', name: 'Example', component: Example
+            }
         ]
     },
 

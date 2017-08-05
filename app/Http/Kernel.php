@@ -17,7 +17,7 @@ class Kernel extends HttpKernel
         /**
          * View Laravel's Last Request Data in chrome dev-tool
          */
-        \Clockwork\Support\Laravel\ClockworkMiddleware::class,
+        // \Clockwork\Support\Laravel\ClockworkMiddleware::class,
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,

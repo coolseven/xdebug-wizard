@@ -33,5 +33,9 @@ body {
 }
 .main .workspace{
     height:100%;
+    padding: 0 20px 0 20px;
     background-color: white;
+}
+.fa{
+    margin-right: 10px;
 }

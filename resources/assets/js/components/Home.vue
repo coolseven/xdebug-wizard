@@ -6,7 +6,6 @@
 </template>
 
 <script>
-    require('../../css/app.css');
 
     import AppHeader from './layout/Header.vue';
     import AppMain   from './layout/Main.vue';
@@ -24,5 +23,5 @@
 </script>
 
 <style>
-
+    @import "../../css/app.css";
 </style>
