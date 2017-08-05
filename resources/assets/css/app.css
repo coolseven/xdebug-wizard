@@ -39,3 +39,6 @@ body {
 .fa{
     margin-right: 10px;
 }
+.el-submenu .el-menu-item{
+    min-width: 8%;
+}
