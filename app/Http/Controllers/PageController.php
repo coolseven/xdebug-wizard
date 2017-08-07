@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 
 use Closure;
-use Illuminate\Support\Facades\Cache;
+
+
 
 class PageController extends Controller
 {
@@ -23,9 +24,8 @@ class PageController extends Controller
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public static function app(Cache $cache)
+    public static function app()
     {
-        dd($cache);
         return view('app');
     }
 }
