@@ -1,6 +1,6 @@
 <template>
-        <aside>
-            <el-menu mode="vertical" default-active="introduction" theme="dark" @select="sideMenuSelected" :collapse="isCollapse">
+        <aside class="side-menu">
+            <el-menu mode="vertical" default-active="introduction" theme="dark" @select="sideMenuSelected" :collapse="isSideMenuCollapsed">
                 <el-menu-item index="introduction">
                     <i class="fa fa-home"></i>
                     <span slot="title">Introduction</span>
@@ -29,11 +29,12 @@
     export default{
         data(){
             return {
-                isCollapse : false
+                isSideMenuCollapsed : false
             }
         },
         methods:{
             sideMenuSelected(menuName,menuNames){
+                this.isSideMenuCollapsed = !this.isSideMenuCollapsed;
                 this.$router.push({name:'Introduction'})
             }
         }

@@ -2,19 +2,18 @@
  * Created by Administrator on 2017/7/2 0002.
  */
 
-// Home component and 404 component are on the top-level of routing
-// which means that they represent the whole page ,not segments
-import Home     from './components/Home.vue';
+// App component and 404 component are page-level components
+import App     from './components/App.vue';
 import NotFound from './components/404.vue';
 
-// page-segments inside Home Component
+// segment components inside App Component's workspace section
 import Example  from './components/example/Example.vue';
 import Introduction from './components/introduction/Introduction.vue';
 
 export default [
 
     {
-        path: '/', name: 'Home', component: Home, children: [
+        path: '/', name: 'App', component: App, children: [
             {
                 path: '', component: Introduction
             },
@@ -33,6 +32,6 @@ export default [
     },
     {
         path: '*', redirect: '404'
-    },
+    }
 
 ]

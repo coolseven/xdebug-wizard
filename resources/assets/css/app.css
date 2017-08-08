@@ -1,44 +1,44 @@
 html{
+    height: 100%;
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 }
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
-    height: 100%;
 }
-.header{
+.app{
+    height:100%;
+}
+.app .header{
     line-height:60px;
     background-color:#324157;
 }
-.header .logo{
+.app .header .logo{
     text-align: center;
 }
-.header .logo-text{
+.app .header .logo-text{
     color: #bfcbd9;
 }
-.header .header-nav-menu-item{
+.app .header .header-nav-menu-item{
     float: right !important;
 }
-.header .header-nav-menu-item:first-child {
+.app .header .header-nav-menu-item:first-child {
     margin-right: 50px;
 }
-.main{
-    width: 100%;
-    background-color: #324157;
-    position: absolute;
-    top: 60px;
-    bottom: 0px;
-}
-.main .workspace{
+.app .body{
+    display: flex;
     height:100%;
+    background-color: #324157;
+}
+.app .body .workspace{
+    height:100%;
+    width:100%;
     padding: 0 20px 0 20px;
     background-color: white;
 }
 .fa{
     margin-right: 10px;
-}
-.el-submenu .el-menu-item{
-    min-width: 8%;
 }

@@ -1,14 +1,14 @@
 <template>
-    <div>
+    <div class="app">
         <app-header :appName="appName"></app-header>
-        <app-main></app-main>
+        <app-body></app-body>
     </div>
 </template>
 
 <script>
 
     import AppHeader from './layout/Header.vue';
-    import AppMain   from './layout/Main.vue';
+    import AppBody   from './layout/Body.vue';
 
     export default {
         data(){
@@ -17,7 +17,7 @@
             }
         },
         components:{
-            AppHeader,AppMain
+            AppHeader,AppBody
         }
     }
 </script>
