@@ -13,7 +13,7 @@ import Introduction from './components/introduction/Introduction.vue';
 export default [
 
     {
-        path: '/', name: 'App', component: App, children: [
+        path: '/',  component: App, children: [
             {
                 path: '', component: Introduction
             },

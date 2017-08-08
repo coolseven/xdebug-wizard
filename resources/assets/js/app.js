@@ -26,6 +26,8 @@ const router = new VueRouter({
     routes
 });
 
+// Setup application store
+import store from './store';
 
 /**
  * Create a Vue Instance With VueRouter and App Component and
@@ -35,5 +37,6 @@ const app = new Vue({
     el:'#app',
     components:{App},
     router,
+    store,
     render: h => h(App)
 });
