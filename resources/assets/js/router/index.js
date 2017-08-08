@@ -3,14 +3,14 @@
  */
 
 // App component and 404 component are page-level components
-import App     from './components/App.vue';
-import NotFound from './components/404.vue';
+import App     from '../components/App.vue';
+import NotFound from '../components/404.vue';
 
 // segment components inside App Component's workspace section
-import Example  from './components/example/Example.vue';
-import Introduction from './components/introduction/Introduction.vue';
+import Example  from '../components/example/Example.vue';
+import Introduction from '../components/introduction/Introduction.vue';
 
-export default [
+const routes = [
 
     {
         path: '/',  component: App, children: [
@@ -34,4 +34,16 @@ export default [
         path: '*', redirect: '404'
     }
 
-]
+];
+
+// Register VueRouter
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+Vue.use(VueRouter);
+
+const router = new VueRouter({
+    mode: 'history',
+    routes
+});
+
+export default router;

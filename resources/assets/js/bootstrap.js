@@ -1,19 +1,10 @@
+import 'font-awesome-webpack';
 
-// window._ = require('lodash');
-
-require('font-awesome-webpack');
-
-/**
- * We'll load jQuery and the Bootstrap jQuery plugin which provides support
- * for JavaScript based Bootstrap features such as modals and tabs. This
- * code may be modified to fit the specific needs of your application.
- */
-
-/*try {
-    window.$ = window.jQuery = require('jquery');
-
-    require('bootstrap-sass');
-} catch (e) {}*/
+// Register ElementUI
+import Vue from 'vue';
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-default/index.css';
+Vue.use(ElementUI);
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -36,6 +27,7 @@ if (XSRFToken) {
 } else {
     console.error('XSRF token not found!');
 }
+
 
 
 

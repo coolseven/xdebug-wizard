@@ -1,32 +1,16 @@
 
-/**
- * load all of this project's JavaScript dependencies which
- * includes Vue and other libraries.
- */
-
 require('./bootstrap');
 
-// Register VueRouter
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-Vue.use(VueRouter);
-
 // Register ElementUI
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-default/index.css';
-Vue.use(ElementUI);
+import Vue from 'vue';
 
 // The App Component Will be Served as the top-level router-view container
 import App from './App.vue';
 
-// Setup application routes
-import routes from './routes';
-const router = new VueRouter({
-    mode: 'history',
-    routes
-});
+// application routes
+import router from './router';
 
-// Setup application store
+// application store
 import store from './store';
 
 /**
