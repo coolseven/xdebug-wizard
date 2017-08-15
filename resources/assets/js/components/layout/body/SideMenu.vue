@@ -23,19 +23,33 @@
                     <span slot="title">More</span>
                 </el-menu-item>
             </el-menu>
+
+            <side-menu-toggler :isSideMenuCollapsed="isSideMenuCollapsed" @click="toggleSideMenu"></side-menu-toggler>
         </aside>
 </template>
 <script>
+    import {mapState} from "vuex"
+    import SideMenuToggler from './SideMenuToggler.vue'
+
     export default{
+        components:{
+            SideMenuToggler
+        },
         data(){
             return {
-                isSideMenuCollapsed : false
+
             }
+        },
+        computed:{
+            ...mapState(['isSideMenuCollapsed'])
         },
         methods:{
             sideMenuSelected(menuName,menuNames){
-                this.isSideMenuCollapsed = !this.isSideMenuCollapsed;
                 this.$router.push({name:'Introduction'})
+            },
+            toggleSideMenu(evt){
+                console.log(evt)
+                this.$store.commit('toggleSideMenu');
             }
         }
     }

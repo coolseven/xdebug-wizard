@@ -12,8 +12,9 @@
     </el-row>
 </template>
 <script>
+
     export default{
-        props:[
+        props     :[
            'logoText'
         ],
         data(){
@@ -21,7 +22,7 @@
 
             }
         },
-        methods:{
+        methods   :{
 
         }
     }
