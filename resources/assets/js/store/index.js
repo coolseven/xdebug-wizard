@@ -4,6 +4,10 @@ Vue.use(Vuex);
 
 const store = new Vuex.Store({
     state: {
+        app:{
+            name:'Xdebug-Wizard',
+            title:'Xdebug Configuration Made Easy'
+        }
     },
     actions: {
     },

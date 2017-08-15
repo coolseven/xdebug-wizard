@@ -1,6 +1,6 @@
 <template>
     <div class="app">
-        <app-header :appName="appName"></app-header>
+        <app-header></app-header>
         <app-body></app-body>
     </div>
 </template>
@@ -13,7 +13,7 @@
     export default {
         data(){
             return {
-                appName: 'Xdebug-Wizard'
+
             }
         },
         components:{

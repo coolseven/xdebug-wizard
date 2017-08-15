@@ -18,7 +18,7 @@
         data(){
             return {
                 reply:'ping...',
-                cardLoading: false,
+                cardLoading: false
             }
         },
         methods:{

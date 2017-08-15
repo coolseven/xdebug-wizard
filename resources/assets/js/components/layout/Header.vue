@@ -13,8 +13,24 @@
 </template>
 <script>
     export default{
-        props:[
-           'appName'
-        ]
+        data(){
+            return {
+
+            }
+        },
+        computed:{
+            appName(){
+                return this.$store.state.app.name;
+            },
+            title(){
+                return this.$store.state.app.title;
+            }
+        },
+        methods:{
+
+        },
+        mounted(){
+            document.title = this.title;
+        }
     }
 </script>
