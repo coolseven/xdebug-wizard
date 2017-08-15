@@ -1,7 +1,7 @@
 <template>
     <el-row class="header">
         <el-col :span="2" class="logo">
-            <span class="text">{{appName}}</span>
+            <span class="text">{{logoText}}</span>
         </el-col>
         <el-col :span="22">
             <el-menu theme="dark" mode="horizontal">
@@ -13,24 +13,16 @@
 </template>
 <script>
     export default{
+        props:[
+           'logoText'
+        ],
         data(){
             return {
 
             }
         },
-        computed:{
-            appName(){
-                return this.$store.state.app.name;
-            },
-            title(){
-                return this.$store.state.app.title;
-            }
-        },
         methods:{
 
-        },
-        mounted(){
-            document.title = this.title;
         }
     }
 </script>
