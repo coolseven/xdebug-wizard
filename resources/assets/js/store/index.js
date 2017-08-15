@@ -11,6 +11,9 @@ const store = new Vuex.Store({
         isSideMenuCollapsed: false,
     },
     actions: {
+        toggleSideMenu(context){
+            context.commit('toggleSideMenu');
+        }
     },
     mutations: {
         toggleSideMenu(state){

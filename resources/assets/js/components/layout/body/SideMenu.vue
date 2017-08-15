@@ -48,8 +48,7 @@
                 this.$router.push({name:'Introduction'})
             },
             toggleSideMenu(evt){
-                console.log(evt)
-                this.$store.commit('toggleSideMenu');
+                this.$store.dispatch('toggleSideMenu');
             }
         }
     }
