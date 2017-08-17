@@ -1,12 +1,13 @@
-**Project Status: Work In Progress**
+## Project Status
+Working In Progress, beta version should be released before Mid-September.
 
 
 
 ## Introduction
 
-xdebug is a very helpful tool in php development, but setting up xdebug in your server and your IDE/editor is sometimes painful and confusing. 
+xdebug is a helpful and powerful tool in php development, but setting up xdebug in your server and your IDE/editor is sometimes confusing/frustrating. 
 
-This website tries to make your life easier by offering an intuitive, step-by-step gui that goes through xdebug's Introduction, Configuration ,Trouble Shooting ,Tookits and more.
+[This website](https://xdebug.huzhongyuan.com) tries to make your life easier by offering an intuitive, step-by-step gui that goes through xdebug's Introduction, Configuration ,Trouble Shooting ,Tookits and more.
 
 
 
