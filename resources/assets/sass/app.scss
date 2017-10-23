@@ -42,6 +42,15 @@ body {
     height:100%;
     .side-menu{
       background-color: #324157;
+      .sideMenuToggler{
+        margin-top: 20px;
+        color: #bfcbd9;
+        text-align: right;
+        font-size: 16px;
+      }
+      .sideMenuToggler:hover{
+        cursor: pointer;
+      }
     }
     .workspace{
       height:100%;

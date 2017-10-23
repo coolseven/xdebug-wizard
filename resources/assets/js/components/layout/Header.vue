@@ -12,16 +12,18 @@
     </el-row>
 </template>
 <script>
+    import {mapState} from "vuex"
+
     export default{
-        props:[
-           'logoText'
-        ],
         data(){
             return {
 
             }
         },
-        methods:{
+        computed:{
+            ...mapState({'logoText' : state => state.app.name})
+        },
+        methods   :{
 
         }
     }
